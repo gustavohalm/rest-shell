@@ -1,3 +1,3 @@
-while true; do 
-  echo -e "HTTP/1.1 200 OK\n\n $(date)" | nc -l -p 8080 -q 1
-done
+]
+echo 'API IN http://localhost:8080'
+while true; do ./router.sh | nc -l -p 8080 -q 1; done
